@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@orcl_high?TNS_ADMIN=./src/main/resources/Wallet_orcl/
+    username: ADMIN
+    password: Pa$$w0rd1234
+    driver-class-name: oracle.jdbc.OracleDriver
+    hikari:
+      connection-timeout: 3000
+      validation-timeout: 3000
+      minimum-idle: 5
+      maximum-pool-size: 20
+      idle-timeout: 200000
+      max-lifetime: 240000
+      pool-name: oraPool
